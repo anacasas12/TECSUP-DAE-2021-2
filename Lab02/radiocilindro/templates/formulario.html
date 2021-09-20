@@ -1,0 +1,10 @@
+<form action="{% url 'radiocilindro:respuesta' %}" method="post">
+{% csrf_token %}
+  <p>Introduzca el diametro en metros<input type="text" name="diametro" size="40"></p>
+  <p>Introduzca la altura en metros<input type="text" name="altura" size="40"></p>
+
+  <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+  </p>
+</form>
